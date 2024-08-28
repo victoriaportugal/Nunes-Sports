@@ -1,0 +1,108 @@
+header {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+#nunesSports {
+    width: 12%;
+    margin: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: #c1c1c1;
+}
+
+#title {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto 60px;
+    display: block;
+}
+
+#sports {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.porCima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97,5%;
+    height: 94%;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 14px;
+    text-align: center;
+}
+
+.image-container:hover #sports {
+    opacity: 0.5;
+}
+
+.image-container:hover .porCima {
+    opacity: 1;
+}
+
+
+main p {
+    font-size: 20px; /* Tamanho da fonte ajustado */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    margin: 20px 0; /* Espaçamento vertical entre parágrafos */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    color: #ffffff; /* Cor do texto */
+    display: block; /* Garante que os parágrafos sejam exibidos como blocos, um em cima do outro */
+    width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e border nas dimensões do elemento */
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 13%;
+    margin: 30px;
+    padding: 20px 0;
+}
