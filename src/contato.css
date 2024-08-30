@@ -2,7 +2,13 @@ header {
     background-color: #000000;
     padding: 20px 0;
 }
-
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+      
+}
 .box {
     position: relative;
     width: 940px;
@@ -110,4 +116,85 @@ footer img {
     width: 13%;
     margin: 30px;
     padding: 20px 0;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para uma melhor leitura */
+        padding: 10px; /* Adiciona padding nas laterais para um espaço confortável */
+    }
+
+    .box {
+        width: 100%; /* Ajusta a largura da caixa para ocupar toda a tela */
+        margin: 0 auto; /* Centraliza a caixa */
+    }
+
+    #nunesSports {
+        width: 20%; /* Aumenta o tamanho do logo para ser mais visível */
+        margin: 20px auto; /* Centraliza o logo e ajusta a margem */
+    }
+
+    nav {
+        position: static; /* Altera o menu de navegação para o fluxo normal da página */
+        text-align: center; /* Centraliza o menu */
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+    }
+
+    nav li {
+        display: block; /* Exibe cada item de navegação em sua própria linha */
+        margin: 8px 0; /* Ajusta a margem entre os itens do menu */
+    }
+
+    nav a {
+        font-size: 16px; /* Ajusta o tamanho da fonte dos links de navegação */
+    }
+
+    #title {
+        padding-top: 50px; /* Reduz o padding superior para economizar espaço */
+        padding-bottom: 15px; /* Ajusta o padding inferior */
+    }
+
+    main {
+        width: 100%; /* Ajusta a largura do main para caber na tela */
+        margin: 0 auto; /* Centraliza o main */
+    }
+
+    form {
+        margin: 20px 0; /* Ajusta o espaçamento do formulário */
+    }
+
+    form label, form legend {
+        font-size: 18px; /* Ajusta o tamanho da fonte dos textos do formulário */
+        margin: 0 0 8px; /* Ajusta a margem inferior */
+    }
+
+    .input-padrao {
+        width: 90%; /* Faz o input ocupar a maior parte da largura disponível */
+        padding: 8px 15px; /* Ajusta o padding para um tamanho mais compacto */
+    }
+
+    .checkbox {
+        margin: 10px 0; /* Ajusta a margem para um espaçamento mais compacto */
+    }
+
+    .enviar {
+        width: 100%; /* Faz o botão de envio ocupar toda a largura disponível */
+        padding: 12px 0; /* Ajusta o padding para melhor ajuste na tela */
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    table {
+        width: 100%; /* Ajusta a tabela para ocupar toda a largura disponível */
+        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor */
+        margin: 10px 0 20px; /* Ajusta a margem para um espaçamento consistente */
+    }
+
+    td, th {
+        padding: 6px 10px; /* Ajusta o padding para uma apresentação mais compacta */
+    }
+
+    footer img {
+        width: 30%; /* Aumenta o tamanho das imagens do rodapé para serem mais visíveis */
+        margin: 20px auto; /* Centraliza e ajusta a margem */
+    }
 }

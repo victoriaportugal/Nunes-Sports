@@ -3,6 +3,14 @@ header {
     padding: 20px 0;
 }
 
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+      
+}
+
 .box {
     position: relative;
     width: 940px;
@@ -167,4 +175,79 @@ footer img {
     width: 13%;
     margin: 30px;
     padding: 20px 0;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para caber melhor na tela */
+        padding: 10px; /* Adiciona padding para dar espaço nas bordas */
+    }
+
+    .box {
+        width: 100%; /* Faz a caixa ocupar toda a largura da tela */
+        margin: 0 auto; /* Centraliza a caixa */
+    }
+
+    #nunesSports {
+        width: 20%; /* Ajusta o tamanho do logo para ser mais visível */
+        margin: 20px auto; /* Centraliza o logo com margem ajustada */
+    }
+
+    nav {
+        position: static; /* Faz o menu de navegação fluir normalmente */
+        text-align: center; /* Centraliza o menu de navegação */
+        margin-top: 20px; /* Adiciona margem superior */
+    }
+
+    nav li {
+        display: block; /* Exibe cada item do menu de navegação em uma linha separada */
+        margin: 8px 0; /* Ajusta a margem entre os itens do menu */
+    }
+
+    nav a {
+        font-size: 16px; /* Ajusta o tamanho da fonte do menu de navegação */
+    }
+
+    #title {
+        padding-top: 50px; /* Ajusta o padding superior para economizar espaço */
+        padding-bottom: 15px; /* Ajusta o padding inferior */
+    }
+
+    .image-container {
+        width: 100%; /* Mantém a imagem ocupando toda a largura disponível */
+        margin: 0 auto 30px; /* Ajusta a margem inferior */
+    }
+
+    main p {
+        font-size: 14px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+        margin: 10px 0; /* Ajusta a margem vertical entre parágrafos */
+    }
+
+    .pesquisar input {
+        width: 60%; /* Ajusta a largura do campo de pesquisa para caber na tela */
+        font-size: 16px; /* Ajusta o tamanho da fonte do input */
+    }
+
+    .pesquisar button {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    .card-container {
+        flex-direction: column; /* Faz os cards serem exibidos em coluna */
+        gap: 20px; /* Ajusta o espaçamento entre os cards */
+    }
+
+    .card {
+        width: 100%; /* Faz os cards ocuparem toda a largura disponível */
+    }
+
+    footer img {
+        width: 30%; /* Aumenta o tamanho das imagens do rodapé para serem mais visíveis */
+        margin: 20px auto; /* Centraliza e ajusta a margem */
+    }
+
+    .preco {
+        font-size: 15px; /* Ajusta o tamanho da fonte do botão de preço */
+        padding: 8px 16px; /* Reduz o padding para melhor ajuste na tela menor */
+    }
 }
