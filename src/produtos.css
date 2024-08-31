@@ -1,8 +1,10 @@
 header {
     background-color: #000000;
     padding: 20px 0;
+    width: 100%;
+    margin: 0; 
+    box-sizing: border-box; 
 }
-
 body {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -170,7 +172,7 @@ main img {
 .actions {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Ajuste o valor do gap conforme necessário */
+    gap: 5px;
 }
 
 .editar,
@@ -198,7 +200,9 @@ footer {
     background-color: #000000;
     color: rgb(255, 255, 255);
     padding: 20px;
-    margin-top: 20px;
+    margin: 0; 
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 footer img {
@@ -312,7 +316,7 @@ footer img {
     }
 
     .actions {
-        gap: 10px; /* Ajusta o espaço entre os botões */
+        gap: 10px; 
     }
 
     .editar,
