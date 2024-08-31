@@ -2,13 +2,16 @@ header {
     background-color: #000000;
     padding: 20px 0;
 }
+
 body {
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
-      
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
 }
+
 .box {
     position: relative;
     width: 940px;
@@ -28,16 +31,15 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 15px;
 }
 
 nav a {
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    justify-content: space-around;
 }
 
 nav a:hover {
@@ -49,41 +51,52 @@ nav a:hover {
     padding-bottom: 20px;
 }
 
-main{
+main {
     width: 940px;
     margin: 0 auto;
 }
 
-form{
+form {
+    background-color: #ffffff;
+    border-radius: 10px; 
+    padding: 30px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     margin: 40px 0;
-} 
-
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
 }
 
-.input-padrao{
+form label, form legend {
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; 
 }
 
-.checkbox{
+.input-padrao {
+    display: block;
+    width: calc(100% - 50px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.checkbox {
     margin: 20px 0;
 }
 
-.enviar{
-    width: 40%;
-    padding: 15px 0;
+.enviar {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px; 
+    padding: 15px;
     font-size: 18px;
     background-color: #000;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .enviar:hover {
@@ -91,19 +104,23 @@ form label, form legend{
 }
 
 table {
-    margin:20px 0 40px;
+    width: 100%;
+    margin: 20px 0 40px;
+    border-collapse: collapse; 
 }
 
-thead{
+thead {
     background: #555555;
     color: #fff;
     font-weight: bold;
 }
 
-td,th {
-    border:1px solid #000;
-    padding: 8px 15px;
+td, th {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    text-align: left;
 }
+
 footer {
     text-align: center;
     background-color: #000000;
@@ -118,83 +135,63 @@ footer img {
     padding: 20px 0;
 }
 
-@media screen and (max-width: 390px) {
-    body {
-        font-size: 14px; /* Ajusta o tamanho da fonte para uma melhor leitura */
-        padding: 10px; /* Adiciona padding nas laterais para um espaço confortável */
-    }
+/* Responsividade */
 
+@media screen and (max-width: 768px) {
     .box {
-        width: 100%; /* Ajusta a largura da caixa para ocupar toda a tela */
-        margin: 0 auto; /* Centraliza a caixa */
+        width: 90%;
     }
 
     #nunesSports {
-        width: 20%; /* Aumenta o tamanho do logo para ser mais visível */
-        margin: 20px auto; /* Centraliza o logo e ajusta a margem */
+        width: 20%;
     }
 
     nav {
-        position: static; /* Altera o menu de navegação para o fluxo normal da página */
-        text-align: center; /* Centraliza o menu */
-        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+        position: static;
+        text-align: center;
+        margin-top: 20px;
     }
 
     nav li {
-        display: block; /* Exibe cada item de navegação em sua própria linha */
-        margin: 8px 0; /* Ajusta a margem entre os itens do menu */
-    }
-
-    nav a {
-        font-size: 16px; /* Ajusta o tamanho da fonte dos links de navegação */
-    }
-
-    #title {
-        padding-top: 50px; /* Reduz o padding superior para economizar espaço */
-        padding-bottom: 15px; /* Ajusta o padding inferior */
+        display: block;
+        margin: 8px 0;
     }
 
     main {
-        width: 100%; /* Ajusta a largura do main para caber na tela */
-        margin: 0 auto; /* Centraliza o main */
+        width: 100%;
     }
 
     form {
-        margin: 20px 0; /* Ajusta o espaçamento do formulário */
-    }
-
-    form label, form legend {
-        font-size: 18px; /* Ajusta o tamanho da fonte dos textos do formulário */
-        margin: 0 0 8px; /* Ajusta a margem inferior */
+        width: 100%;
+        padding: 20px;
     }
 
     .input-padrao {
-        width: 90%; /* Faz o input ocupar a maior parte da largura disponível */
-        padding: 8px 15px; /* Ajusta o padding para um tamanho mais compacto */
-    }
-
-    .checkbox {
-        margin: 10px 0; /* Ajusta a margem para um espaçamento mais compacto */
+        width: calc(100% - 20px);
     }
 
     .enviar {
-        width: 100%; /* Faz o botão de envio ocupar toda a largura disponível */
-        padding: 12px 0; /* Ajusta o padding para melhor ajuste na tela */
-        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
     }
 
-    table {
-        width: 100%; /* Ajusta a tabela para ocupar toda a largura disponível */
-        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor */
-        margin: 10px 0 20px; /* Ajusta a margem para um espaçamento consistente */
+    form label, form legend {
+        font-size: 16px;
     }
 
-    td, th {
-        padding: 6px 10px; /* Ajusta o padding para uma apresentação mais compacta */
+    .input-padrao {
+        padding: 8px;
     }
 
-    footer img {
-        width: 30%; /* Aumenta o tamanho das imagens do rodapé para serem mais visíveis */
-        margin: 20px auto; /* Centraliza e ajusta a margem */
+    .enviar {
+        font-size: 16px;
+        padding: 12px;
     }
 }

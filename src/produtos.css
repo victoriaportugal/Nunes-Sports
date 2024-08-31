@@ -6,9 +6,10 @@ header {
 body {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
-      
+    margin: 0;
+    padding: 0;
 }
 
 .box {
@@ -139,6 +140,9 @@ main {
 
 .container {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 main img {
@@ -163,6 +167,32 @@ main img {
     background-color: #4e4e4e;
 }
 
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Ajuste o valor do gap conforme necessário */
+}
+
+.editar,
+.deletar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editar:hover,
+.deletar:hover {
+    background-color: #4e4e4e;
+}
+
 footer {
     text-align: center;
     background-color: #000000;
@@ -177,77 +207,121 @@ footer img {
     padding: 20px 0;
 }
 
-@media screen and (max-width: 390px) {
-    body {
-        font-size: 14px; /* Ajusta o tamanho da fonte para caber melhor na tela */
-        padding: 10px; /* Adiciona padding para dar espaço nas bordas */
-    }
-
+/* Responsividade */
+@media screen and (max-width: 1024px) {
     .box {
-        width: 100%; /* Faz a caixa ocupar toda a largura da tela */
-        margin: 0 auto; /* Centraliza a caixa */
+        width: 90%;
     }
 
     #nunesSports {
-        width: 20%; /* Ajusta o tamanho do logo para ser mais visível */
-        margin: 20px auto; /* Centraliza o logo com margem ajustada */
+        width: 15%;
     }
 
     nav {
-        position: static; /* Faz o menu de navegação fluir normalmente */
-        text-align: center; /* Centraliza o menu de navegação */
-        margin-top: 20px; /* Adiciona margem superior */
-    }
-
-    nav li {
-        display: block; /* Exibe cada item do menu de navegação em uma linha separada */
-        margin: 8px 0; /* Ajusta a margem entre os itens do menu */
+        top: 40px;
+        right: 20px;
     }
 
     nav a {
-        font-size: 16px; /* Ajusta o tamanho da fonte do menu de navegação */
+        font-size: 18px;
     }
 
     #title {
-        padding-top: 50px; /* Ajusta o padding superior para economizar espaço */
-        padding-bottom: 15px; /* Ajusta o padding inferior */
+        padding-top: 80px;
     }
 
     .image-container {
-        width: 100%; /* Mantém a imagem ocupando toda a largura disponível */
-        margin: 0 auto 30px; /* Ajusta a margem inferior */
-    }
-
-    main p {
-        font-size: 14px; /* Ajusta o tamanho da fonte para melhor legibilidade */
-        margin: 10px 0; /* Ajusta a margem vertical entre parágrafos */
+        width: 90%;
     }
 
     .pesquisar input {
-        width: 60%; /* Ajusta a largura do campo de pesquisa para caber na tela */
-        font-size: 16px; /* Ajusta o tamanho da fonte do input */
+        width: 60%;
     }
 
     .pesquisar button {
-        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
-    }
-
-    .card-container {
-        flex-direction: column; /* Faz os cards serem exibidos em coluna */
-        gap: 20px; /* Ajusta o espaçamento entre os cards */
+        font-size: 16px;
     }
 
     .card {
-        width: 100%; /* Faz os cards ocuparem toda a largura disponível */
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    footer img {
-        width: 30%; /* Aumenta o tamanho das imagens do rodapé para serem mais visíveis */
-        margin: 20px auto; /* Centraliza e ajusta a margem */
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #title {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+    }
+
+    .pesquisar input {
+        width: 70%;
+    }
+
+    .pesquisar button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #nunesSports {
+        width: 25%;
+        margin: 20px auto;
+    }
+
+    .card {
+        width: calc(100% - 20px);
     }
 
     .preco {
-        font-size: 15px; /* Ajusta o tamanho da fonte do botão de preço */
-        padding: 8px 16px; /* Reduz o padding para melhor ajuste na tela menor */
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+
+    .actions {
+        gap: 10px; /* Ajusta o espaço entre os botões */
+    }
+
+    .editar,
+    .deletar {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 30%;
     }
 }

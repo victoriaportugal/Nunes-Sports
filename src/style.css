@@ -1,16 +1,17 @@
-body {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-      
-}
-      
 header {
     background-color: #000000;
     padding: 20px 0;
 }
 
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
 .box {
     position: relative;
     width: 50%;
@@ -30,7 +31,7 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 15px;
 }
 
 nav a {
@@ -39,7 +40,6 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    justify-content: space-around;
 }
 
 nav a:hover {
@@ -49,7 +49,6 @@ nav a:hover {
 #title {
     padding-top: 120px;
     padding-bottom: 20px;
-    
 }
 
 .image-container {
@@ -69,7 +68,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 97,5%;
+    width: 97.5%;
     height: 94%;
     background: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
@@ -90,16 +89,15 @@ nav a:hover {
     opacity: 1;
 }
 
-
 main p {
-    font-size: 20px; /* Tamanho da fonte ajustado */
-    line-height: 1.5; /* Altura da linha para melhor legibilidade */
-    margin: 20px 0; /* Espaçamento vertical entre parágrafos */
-    text-align: center; /* Centraliza o texto dentro do parágrafo */
-    color: #ffffff; /* Cor do texto */
-    display: block; /* Garante que os parágrafos sejam exibidos como blocos, um em cima do outro */
-    width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui padding e border nas dimensões do elemento */
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer {
@@ -116,60 +114,99 @@ footer img {
     padding: 20px 0;
 }
 
-@media screen and (max-width: 390px) {
-    body {
-        font-size: 15px; 
-        padding: 10px; 
-    }
-
+/* Responsivo */
+@media screen and (max-width: 1024px) {
     .box {
-        width: 90%; 
-        margin: 0 auto; 
+        width: 70%;
     }
 
     #nunesSports {
-        width: 25%; 
-        margin: 20px auto; 
+        width: 20%;
     }
 
     nav {
-        position: static; 
-        text-align: center; 
-        margin-top: 20px; 
+        top: 30px;
+        right: 30px;
     }
 
     nav li {
-        display: block; 
-        margin: 12px 0; 
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%;
     }
 
-    nav a {
-        font-size: 18px; 
+    #nunesSports {
+        width: 25%;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px 0;
     }
 
     #title {
-        padding-top: 50px; 
-        padding-bottom: 15px; 
+        padding-top: 60px;
     }
 
     .image-container {
-        width: 100%; 
-        margin: 0 auto 25px; 
+        width: 90%;
     }
 
     .porCima {
         width: 100%;
-        height: 100%; 
-        padding: 10px; 
+        height: auto;
     }
 
     main p {
-        font-size: 15px; 
-        margin: 10px 0; 
+        font-size: 18px;
+        margin: 15px 0;
     }
 
     footer img {
-        width: 35%; 
-        margin: 20px auto; 
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    #nunesSports {
+        width: 30%;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .porCima {
+        font-size: 16px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    footer img {
+        width: 30%;
     }
 }
